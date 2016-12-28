@@ -1,0 +1,12 @@
+{% extends "core/base.html" %}
+{% load crispy_forms_tags %}
+{% block title %}Edit your account{% endblock %}
+{% block content %}
+<h3 class="page-header" >Edit your account</h3>
+<p>You can edit your account using the following form:</p>
+<form action="." method="post">
+{{ user_form|crispy}}
+{% csrf_token %}
+<p><input  class="btn  btn-primary btn-block " type="submit" value="Save changes"></p>
+</form>
+{% endblock %}

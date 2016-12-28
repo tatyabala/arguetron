@@ -1,0 +1,4 @@
+*.pyc
+arguetrons
+__pycache__
+db.sqlite3
